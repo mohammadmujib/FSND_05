@@ -10,3 +10,4 @@ RUN pip install flask
 
 ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
 
+EXPOSE 8080
