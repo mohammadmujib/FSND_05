@@ -24,7 +24,8 @@ def client():
 
 def test_health(client):
     response = client.get('/')
-    assert False # false assertion will stop build process with error
+    # assert False 
+    # false assertion will stop build process with error
     assert response.status_code == 200
     assert response.json == 'Healthy'
 
